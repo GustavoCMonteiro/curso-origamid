@@ -1,0 +1,28 @@
+body
+{
+  margin: 0px;
+}
+
+.flex
+{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+h2
+{
+  background-color: #e7e7e7;
+  border: 1px solid #c0c0c0;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.grid
+{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 20px;
+}

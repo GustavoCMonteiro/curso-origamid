@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.formacao
+{
+  background-color: #141414;
+}
+.formacao-grid
+{
+  max-width: 1300px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formacao-texto
+{
+  font-size: 1.7rem;
+  line-height: 1.3;
+  color: #a3a3a3;
+  max-width: 40ch;
+  margin-bottom: 60px;
+}
+
+.formacao-texto strong
+{
+  color: white;
+}
+
+.formacao-faculdades
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade
+{
+  flex: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.faculdade-tipo
+{
+  color: #a3a3a3;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.faculdade-curso
+{
+  color: white;
+  max-width: 15ch;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade-curso::before
+{
+content: "";
+position: absolute;
+width: 4px;
+height: 20px;
+display: block;
+background: linear-gradient(#b6f829, #67dd0a);
+top: 0px;
+left: -24px;
+}
+
+.faculdade-nome
+{
+  color: #a3a3a3;
+  font-size: 1.1rem;
+}
+
+.formacao-cursos
+{
+  margin-bottom: 60px;
+}
+.formacao-extras h3
+{
+  color: #a3a3a3;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.formacao-extras h3::before
+{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -40px;
+  top: -4px;
+}
+
+.formacao-cursos h3::before {
+  background: url("../img/cursos.svg") no-repeat center center;
+}
+
+.formacao-idiomas h3::before {
+  background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formacao-extras ul li
+{
+  color: white;
+  padding: 10px 0px;
+  font-size: 1.4rem;
+} 
+
+.formacao-cursos ul li
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao-cursos ul li span
+{
+  color: #a3a3a3;
+}
+
+@media (max-width: 950px)
+{
+  .formacao-grid{
+    grid-template-columns: 1fr;
+    padding: 40px;
+    gap: 40px;
+  }
+  .formacao-extras{
+    margin-left: 40px;
+  }
+  .formacao-texto{
+  font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px)
+{
+  .formacao-extras ul li{
+  font-size: 1.2rem;
+  }
+  .faculdade-tipo{
+  font-size: 1.1rem;
+  }
+  .faculdade-curso{
+  font-size: 1.2rem;
+  }
+  .formacao-extras h3{
+  font-size: 1rem;
+  }
+}
