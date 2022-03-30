@@ -1,0 +1,88 @@
+.planos{
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.planos h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.planos span{
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.planos sup{
+  font-size: 1.5rem;
+}
+
+.planos a{
+  max-width: 400px;
+  font-size: 2.25rem;
+  display: block;
+  border: 2px solid black;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.planos-classe {
+  border: 3px solid white;
+  padding: 30px;
+  border-radius: 5px;
+  flex: 1;
+  max-width: 400px;
+}
+
+
+.planos li{
+  font-size: 1.2rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.planos li:after{
+  content:"";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--cor-2);
+}
+
+
+@media (max-width: 800px){
+  .planos{
+    padding: 50px;
+  }
+  .planos h3 {
+    font-size: 2.5rem;
+  }
+  
+  .planos span{
+    font-size: 2.5rem;
+  }
+  .planos a{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .plano-ouro{
+    order: -1;
+  }
+}
