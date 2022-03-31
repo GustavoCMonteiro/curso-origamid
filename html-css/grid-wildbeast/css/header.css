@@ -1,0 +1,32 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-content: center;
+  padding: 30px 20px;
+}
+
+.header-img{
+  max-width: 200px;
+}
+
+.header-nav{
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav li a{
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+}
+
+.header-nav a:hover{
+  background-color: var(--bg-cor1);
+}
+
+@media (max-width: 700px){
+  .header{
+    grid-template-columns: 1fr;
+  }
+}

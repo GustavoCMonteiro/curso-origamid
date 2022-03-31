@@ -1,0 +1,42 @@
+.estrutura{
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 3fr 1fr;
+}
+
+.header, .footer{
+  grid-column: 1/-1;
+}
+
+@media (max-width: 1000px){
+  .estrutura{
+    grid-template-columns: minmax(150px, 1fr) 3fr;
+  }
+  .anuncios{
+    grid-column: 2;
+  }
+  .sidenav{
+    grid-row: 2/4;
+  }
+}
+
+@media (max-width: 700px){
+  .estrutura{
+    grid-template-columns: 1fr;
+  }
+  .header, .footer{
+    grid-row: 1;
+  }
+  .sidenav{
+    grid-row: 2;
+  }
+  .principal{
+    grid-row: 3;
+  }
+  .anuncios{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .footer{
+    grid-row: 5;
+  }
+}

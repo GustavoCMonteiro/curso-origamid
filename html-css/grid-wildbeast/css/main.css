@@ -1,0 +1,106 @@
+.principal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 30px;
+  gap: 20px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.principal p{
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.titulo h1{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.titulo p{
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.status{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 0px 30px;
+}
+
+.numero1, .numero2{
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 5px 20px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
+}
+
+.medida1, .medida2{
+  background-color: white;
+  padding: 3px 20px;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
+}
+
+.numero2{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.texto1{
+  grid-column: 1/-1;
+}
+
+.texto2{
+  max-width: 200px;
+  font-size: 0.8rem !important;
+  line-height: 1.2rem !important;
+}
+
+.img-1{
+  grid-row: span 2;
+}
+
+blockquote{
+  grid-column: 1/-1;
+  border-radius: 5px;
+  display: block;
+}
+
+blockquote p{
+  font-size: 1.5rem !important;
+  text-align: center;
+  font-style: italic;
+  padding: 30px 50px;
+  display: block;
+}
+
+.lista{
+  grid-row: span 2;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.lista li{
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--bg-cor2);
+  padding: 10px;
+  text-shadow: .5px .5px .5px black;
+}
+
+.lista li:nth-last-child(1){
+  border-bottom: none;
+}
+
+.img-3{
+  grid-column: 1/-1;
+}
+
+@media (max-width: 700px){
+  .principal{
+    grid-template-columns: 1fr;
+  }
+}

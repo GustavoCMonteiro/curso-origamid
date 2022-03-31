@@ -1,0 +1,44 @@
+.sidenav{
+  padding: 30px;
+}
+
+.sidenav li a{
+  display: block;
+ min-width: 60px; 
+ max-width: 100px;
+ margin: 0 auto 30px auto;
+ padding: 20px;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
+ transition: 0.1s ease-out;
+}
+
+.sidenav li a:hover{
+  background-color: var(--bg-cor2);
+}
+
+@media (max-width: 700px){
+  .sidenav ul{
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .sidenav{
+    overflow-x: auto;
+    padding: 10px 0px;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: '→';
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sidenav li a{
+    margin: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+:root{
+  --bg-cor1: #8844ee;
+  --bg-cor2: #b07dfb;
+  --bg-cor3: #eeeeee;
+  --cor-0: white;
+  --cor-1: #b07dfb;
+}
+
+
+.gradient{
+  background: linear-gradient(135deg, var(--bg-cor1), var(--bg-cor2))
+}
+
+.cor-0{
+  color: var(--cor-0);
+}
+
+.cor-1{
+  color: var(--cor-1);
+}
+
+.bg-cor3{
+  background-color: var(--bg-cor3);
+}
+
+body, h1, p, ul, li, a, blockquote{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Vollkorn', Georgia, 'Times New Roman', Times, serif
+}
+img
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style: none;
+}
+

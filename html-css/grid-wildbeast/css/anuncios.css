@@ -1,0 +1,32 @@
+.anuncios li{
+  padding: 20px;
+}
+
+.footer{
+  padding: 30px;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px){
+  .anuncios ul{
+    display: flex;
+  }
+
+  .anuncios li{
+    padding: 30px;
+  }
+
+  .anuncios{
+    background-color: white;
+  }
+}
+
+@media (max-width: 700px){
+  .anuncios li{
+    padding: 20px 30px;
+  }
+}
