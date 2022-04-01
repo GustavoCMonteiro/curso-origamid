@@ -6,7 +6,6 @@
   --cor-1: #b07dfb;
 }
 
-
 .gradient{
   background: linear-gradient(135deg, var(--bg-cor1), var(--bg-cor2))
 }
@@ -28,7 +27,7 @@ body, h1, p, ul, li, a, blockquote{
   padding: 0px;
 }
 body{
-  font-family: 'Vollkorn', Georgia, 'Times New Roman', Times, serif
+  font-family: 'Vollkorn', Georgia, Times, serif
 }
 img
 {

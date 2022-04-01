@@ -6,7 +6,7 @@
   padding: 30px 20px;
 }
 
-.header-img{
+.header-logo{
   max-width: 200px;
 }
 
@@ -17,8 +17,9 @@
 
 .header-nav li a{
   padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.301);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  transition: .5s;
 }
 
 .header-nav a:hover{

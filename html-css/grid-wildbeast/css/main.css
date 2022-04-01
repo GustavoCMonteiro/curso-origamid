@@ -34,7 +34,7 @@
   line-height: 3rem;
   padding: 5px 20px;
   border-radius: 5px 5px 0 0;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .medida1, .medida2{
@@ -42,7 +42,7 @@
   padding: 3px 20px;
   text-align: center;
   border-radius: 0 0 5px 5px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .numero2{
@@ -56,7 +56,7 @@
 
 .texto2{
   max-width: 200px;
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   line-height: 1.2rem !important;
 }
 
@@ -68,6 +68,7 @@ blockquote{
   grid-column: 1/-1;
   border-radius: 5px;
   display: block;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 blockquote p{
@@ -82,6 +83,9 @@ blockquote p{
   grid-row: span 2;
   padding: 20px 30px;
   border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 .lista li{
@@ -89,6 +93,7 @@ blockquote p{
   border-bottom: 2px solid var(--bg-cor2);
   padding: 10px;
   text-shadow: .5px .5px .5px black;
+  margin: auto 0;
 }
 
 .lista li:nth-last-child(1){
