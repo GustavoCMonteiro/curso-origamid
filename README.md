@@ -5,4 +5,4 @@
  
  https://gustavocmonteiro.github.io/curso-origamid/html-css/grid-wildbeast
 
- https://gustavocmonteiro.github.io/curso-origamid/javascript/iniciantes/alvo
+ https://gustavocmonteiro.github.io/curso-origamid/javascript/iniciantes
