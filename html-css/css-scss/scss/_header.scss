@@ -1,0 +1,110 @@
+body {
+  background-color: $bg-color;
+}
+
+main {
+  border-top: 10px solid $border-color;
+  border-left: 10px solid $border-color;
+  border-right: 10px solid $border-color;
+  @include display(700) {
+    border: none;
+  }
+}
+
+.container-960 {
+  max-width: 960px;
+  margin: 0 auto;
+  @include display(1000) {
+    margin: 0 30px;
+  }
+  @include display(700) {
+    margin: 0 20px;
+  }
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-top: 75px;
+  gap: 40px;
+  margin-bottom: 150px;
+  @include display(1000) {
+    gap: 20px;
+  }
+  @include display(700) {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+}
+
+.logotipo {
+  max-width: 200px;
+  @include display(1000) {
+    margin-bottom: 100px;
+  }
+  @include display(700) {
+    margin-bottom: 20px;
+  }
+}
+
+.img-principal {
+  grid-column: 2;
+  grid-row: 1/4;
+  img {
+    max-width: 100%;
+    border: 10px solid $border-color;
+  }
+  @include display(700) {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 300px;
+  }
+}
+
+.informacoes {
+  max-width: 320px;
+  div span {
+    display: block;
+    line-height: 30px;
+    font-weight: bold;
+    color: $primary-color;
+    @include font($font-1, 18);
+  }
+}
+
+.funcionamento {
+  padding-bottom: 10px;
+  border-bottom: 3px solid $primary-color;
+  border-right: 3px solid $primary-color;
+}
+
+.endereco {
+  padding-top: 10px;
+  border-right: 3px solid $primary-color;
+}
+
+.telefone {
+  color: $secondary-color;
+  line-height: 30px;
+  @include font($font-1, 18);
+}
+
+.detalhes {
+  display: flex;
+  gap: 50px;
+  margin-left: 40px;
+  @include display(1000) {
+    display: none;
+  }
+
+  div {
+    width: 20px;
+    height: 220px;
+    background-color: $primary-color;
+    transform: rotate(20deg);
+    @include display(1000) {
+      height: 150px;
+      width: 15px;
+    }
+  }
+}

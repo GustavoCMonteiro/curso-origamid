@@ -1,0 +1,17 @@
+.rodape {
+  background-color: $primary-color;
+}
+
+.rodape-flex {
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: $bg-color;
+    @include font($font-1, 16);
+  }
+  @include display(1000) {
+  }
+}

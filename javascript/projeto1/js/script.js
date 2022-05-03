@@ -4,6 +4,10 @@ import menuAcordion from "./modules/menu-acordion.js";
 import tabMenuNav from "./modules/menu-nav.js";
 import modalLogin from "./modules/modal.js";
 import toltip from "./modules/toltip.js";
+import dropDownMenu from "./modules/dropdown-menu.js";
+import menuMobile from "./modules/menu-mobile.js";
+import animaNumeros from "./modules/anima-numeros.js";
+import horarioFuncionamento from "./modules/horario-funcionamento.js";
 
 scrollSuave();
 scrollDown();
@@ -11,3 +15,7 @@ menuAcordion();
 tabMenuNav();
 modalLogin();
 toltip();
+dropDownMenu();
+menuMobile();
+animaNumeros();
+horarioFuncionamento();

@@ -1,0 +1,37 @@
+$bg-color: #edece4;
+$border-color: #cbc6b9;
+$primary-color: #2a2426;
+$secondary-color: #988c78;
+$detail-color: #1ab912;
+
+$font-1: "PT Mono", monospace;
+$font-2: "Aref Ruqaa", serif;
+
+@mixin font($font, $size) {
+  $size: $size / 16;
+  font-family: $font;
+  font-weight: bold;
+  font-size: $size + rem;
+}
+
+@mixin afterh1() {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  background-color: $primary-color;
+}
+
+@mixin display($size) {
+  @if $size == 1000 {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  } @else if $size == 700{
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+}

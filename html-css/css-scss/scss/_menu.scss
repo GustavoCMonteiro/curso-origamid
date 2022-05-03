@@ -1,0 +1,69 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 150px;
+  h1 {
+    grid-row: 1/4;
+    text-transform: uppercase;
+    color: $primary-color;
+    @include font($font-1, 20);
+    &::after {
+      @include afterh1;
+    }
+    @include display(1000) {
+      grid-column: 1/-1;
+      grid-row: 1;
+    }
+  }
+  .principais {
+    grid-row: 2;
+    @include display(1000) {
+      grid-row: 3;
+    }
+    @include display(700) {
+      grid-row: 4;
+    }
+  }
+  @include display(1000) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include display(700) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.produtos {
+  h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left: 70px;
+    color: $primary-color;
+    @include font($font-2, 24);
+  }
+  ul {
+    color: $primary-color;
+    @include font($font-1, 18);
+    li {
+      padding: 5px;
+    }
+    span {
+      margin-right: 15px;
+      display: inline-block;
+      width: 50px;
+      text-align: right;
+      color: $secondary-color;
+      @include font($font-2, 18);
+    }
+    sup {
+      @include font($font-2, 12);
+    }
+  }
+}
+
+.foto-menu img {
+  border-radius: 50%;
+  width: 200px;
+  border: 10px solid $border-color;
+  margin-left: 40px;
+}

@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #edece4;
+}
+
+main {
+  border-top: 10px solid #cbc6b9;
+  border-left: 10px solid #cbc6b9;
+  border-right: 10px solid #cbc6b9;
+}
+
+@media (max-width: 700px) {
+  main {
+    border: none;
+  }
+}
+
+.container-960 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .container-960 {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-960 {
+    margin: 0 20px;
+  }
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-top: 75px;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 1000px) {
+  .principal {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .principal {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+}
+
+.logotipo {
+  max-width: 200px;
+}
+
+@media (max-width: 1000px) {
+  .logotipo {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logotipo {
+    margin-bottom: 20px;
+  }
+}
+
+.img-principal {
+  grid-column: 2;
+  grid-row: 1/4;
+}
+
+.img-principal img {
+  max-width: 100%;
+  border: 10px solid #cbc6b9;
+}
+
+@media (max-width: 700px) {
+  .img-principal {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 300px;
+  }
+}
+
+.informacoes {
+  max-width: 320px;
+}
+
+.informacoes div span {
+  display: block;
+  line-height: 30px;
+  font-weight: bold;
+  color: #2a2426;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.funcionamento {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #2a2426;
+  border-right: 3px solid #2a2426;
+}
+
+.endereco {
+  padding-top: 10px;
+  border-right: 3px solid #2a2426;
+}
+
+.telefone {
+  color: #988c78;
+  line-height: 30px;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.detalhes {
+  display: flex;
+  gap: 50px;
+  margin-left: 40px;
+}
+
+@media (max-width: 1000px) {
+  .detalhes {
+    display: none;
+  }
+}
+
+.detalhes div {
+  width: 20px;
+  height: 220px;
+  background-color: #2a2426;
+  transform: rotate(20deg);
+}
+
+@media (max-width: 1000px) {
+  .detalhes div {
+    height: 150px;
+    width: 15px;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.menu h1 {
+  grid-row: 1/4;
+  text-transform: uppercase;
+  color: #2a2426;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.menu h1::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  background-color: #2a2426;
+}
+
+@media (max-width: 1000px) {
+  .menu h1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+}
+
+.menu .principais {
+  grid-row: 2;
+}
+
+@media (max-width: 1000px) {
+  .menu .principais {
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu .principais {
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+.produtos h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-left: 70px;
+  color: #2a2426;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.produtos ul {
+  color: #2a2426;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.produtos ul li {
+  padding: 5px;
+}
+
+.produtos ul span {
+  margin-right: 15px;
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+  color: #988c78;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.produtos ul sup {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.foto-menu img {
+  border-radius: 50%;
+  width: 200px;
+  border: 10px solid #cbc6b9;
+  margin-left: 40px;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 50px;
+}
+
+.contato h1 {
+  grid-row: 1/4;
+  text-transform: uppercase;
+  color: #2a2426;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.contato h1::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  background-color: #2a2426;
+  width: 170px;
+}
+
+@media (max-width: 1000px) {
+  .contato h1 {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+#contato label {
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contato input,
+#contato textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #988c78;
+  margin-bottom: 20px;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  #contato input,
+  #contato textarea {
+    font-family: "PT Mono", monospace;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+}
+
+.contato-flex {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+}
+
+.enviar {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 10px;
+}
+
+.enviar button {
+  grid-row: 1/3;
+  width: 190px;
+  height: 40px;
+  text-transform: uppercase;
+  color: #988c78;
+  background-color: transparent;
+  border: 2px solid #988c78;
+  box-shadow: 4px 4px 0 -2px #edece4, 4px 4px 0 #988c78;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.enviar button:hover {
+  box-shadow: 2px 2px 0 -2px #edece4, 2px 2px 0 #988c78;
+}
+
+@media (max-width: 700px) {
+  .enviar button {
+    margin-bottom: 20px;
+  }
+}
+
+.enviar span {
+  color: #988c78;
+  text-align: right;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 700px) {
+  .enviar span {
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .enviar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.img-map {
+  border: 10px solid #cbc6b9;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .img-map {
+    width: 1000px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .img-map {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.rodape {
+  background-color: #2a2426;
+}
+
+.rodape-flex {
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-flex p {
+  color: #edece4;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}

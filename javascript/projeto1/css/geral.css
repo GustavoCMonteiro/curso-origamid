@@ -282,3 +282,18 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #e54;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1.5px solid black;
+}
+
+.aberto::after {
+  background-color: #3f4;
+}
