@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre na sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name-modal" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name-modal" required>
+          </div>
+          <div class="mb-3">
+            <label for="email-modal" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email-modal">
+          </div>
+          <a class="btn btn-primary" href="#">Entrar na Conta</a>
+          <span class="d-block form-text text-muted">Esqueceu sua senha <a href="">clique aqui</a></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fecha modal -->
+
+  <!-- navegacao -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light py-3 px-3 box-shadow navegacao">
+    <a class="navbar-brand" href="/index.html"><img src="img/caravan.svg" alt="Caravan"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locais
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/locais.html">California</a></li>
+            <li><a class="dropdown-item" href="/locais.html">Paris</a></li>
+            <li><a class="dropdown-item" href="/locais.html">Dublin</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary ms-md-2" href="/inscrevase.html">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fecha navegacao -->
+
+  <!-- mensagem -->
+  <section class="container nav-margin mb-5">
+    <div class="text-center py-5">
+      <h3 class="h6 text-uppercase">Possui alguma dúvida</h3>
+      <h2 class="display-3 text-primary">Fale Conosco</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 bg-light rounded-3 py-4 px-4 box-shadow">
+        <div class="mb-3">
+          <label for="name1" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name1" required>
+        </div>
+        <div class="mb-3">
+          <label for="email1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email1">
+        </div>
+        <div class="mb-3">
+          <label for="textarea1" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="textarea1" rows="4"></textarea>
+        </div>
+        <a class="btn btn-primary" href="#">Enviar Mensagem</a>
+      </div>
+
+      <div class="col-lg-6 mt-lg-0 mt-5">
+        <h4 class="h6 text-uppercase">Nosso Endereço</h4>
+        <img class="img-fluid rounded-3 box-shadow" src="img/mapa.png" alt="">
+
+        <h4 class="h6 text-uppercase mt-4 mb-0">Dados de Contato</h4>
+        <ul class="list-unstyled text-secondary lista-footer">
+          <li>caravan@caravan.com.br</li>
+          <li>21 99999-9999</li>
+          <li>De Seg. à Sex. das 8h às 18h</li>
+        </ul>
+
+        <h4 class="h6 text-uppercase mt-4 mb-0">Redes Sociais</h4>
+        <ul class="list-unstyled text-primary lista-footer">
+          <li><a style="width: 200px;" class="btn btn-outline-secondary my-1" href="">Facebook</a></li>
+          <li><a style="width: 200px;" class="btn btn-outline-secondary" href="">Twitter</a></li>
+          <li><a style="width: 200px;" class="btn btn-outline-secondary my-1" href="">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- fecha mensagem -->
+
+  <!-- menu acordion -->
+  <section class="container">
+    <div class="text-center py-5">
+      <h3 class="h6 text-uppercase">Ainda está com dúvidas?</h3>
+      <h2 class="display-3 text-primary">Perguntas Frequentes</h2>
+    </div>
+
+    <div class="row justify-content-center mb-4">
+      <div class="accordion col-md-10" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              → É possível cancelar a viagem?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              → Qual a garantia que tenho se perder o voo?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              → Qual a principal forma de viagem?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              → Qual o melhor destino de viagem?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              → Vocês dão descontos para grupos grandes?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p class="text-uppercase mb-1">Fale conosco para mais dúvidas</p>
+      <a class="btn btn-primary btn-lg mb-5" href="#">Entre em contato</a>
+    </div>
+  </section>
+  <!-- menu acordion -->
+
+  <footer>
+    <div class="bg-dark">
+      <div class="container-fluid row px-5 py-3">
+        <div class="col-md-6 row mb-3">
+          <div class="col-6">
+            <h4 class="h6 text-white text-uppercase">Páginas</h4>
+            <ul class="list-unstyled text-primary lista-footer">
+              <li><a href="">Planos</a></li>
+              <li><a href="">Contatos</a></li>
+              <li><a href="">Inscreva-se</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h4 class="h6 text-white text-uppercase">Locais</h4>
+            <ul class="list-unstyled text-primary lista-footer">
+              <li><a href="">Califórnia</a></li>
+              <li><a href="">Paris</a></li>
+              <li><a href="">Dublin</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 row">
+          <div class="col-md-8 mb-3">
+            <h4 class="h6 text-white text-uppercase">Dados de Contato</h4>
+            <ul class="list-unstyled text-secondary lista-footer">
+              <li>caravan@caravan.com.br</li>
+              <li>21 99999-9999</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6 text-white text-uppercase">Redes Sociais</h4>
+            <ul class="list-unstyled text-primary lista-footer">
+              <li><a style="width: 140px;" class="btn btn-outline-secondary my-1" href="">Facebook</a></li>
+              <li><a style="width: 140px;" class="btn btn-outline-secondary" href="">Twitter</a></li>
+              <li><a style="width: 140px;" class="btn btn-outline-secondary my-1" href="">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-success">
+      <p class="text-white text-center py-3 m-0">Site criado por <strong>Gustavo Monteiro</strong></p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
