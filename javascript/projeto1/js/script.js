@@ -6,8 +6,8 @@ import modalLogin from "./modules/modal.js";
 import toltip from "./modules/toltip.js";
 import dropDownMenu from "./modules/dropdown-menu.js";
 import menuMobile from "./modules/menu-mobile.js";
-import animaNumeros from "./modules/anima-numeros.js";
 import horarioFuncionamento from "./modules/horario-funcionamento.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 
 scrollSuave();
 scrollDown();
@@ -17,5 +17,5 @@ modalLogin();
 toltip();
 dropDownMenu();
 menuMobile();
-animaNumeros();
 horarioFuncionamento();
+fetchAnimais();

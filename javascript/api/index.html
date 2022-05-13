@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino de API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Retorne o endereço a partir do CEP</h1>
+  <div class="container">
+    <form class="form-grid">
+      <div class="form-flex">
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep">
+        <input class="button" type="button" value="Buscar CEP">
+      </div>
+      <div class="form-maior">
+        <label for="logradouro">Logradouro</label>
+        <input type="text" name="logradouro" id="logradouro">
+      </div>
+      <div class="form-maior">
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro">
+      </div>
+      <div>
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+      </div>
+      <div>
+        <label for="estado">Estado</label>
+        <input type="text" name="estado" id="estado">
+      </div>
+    </form>
+  </div>
+
+  <h1>Valor do bitcoin a cada 30s</h1>
+  <div class="container">
+    <span class="valor-btc"></span>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
