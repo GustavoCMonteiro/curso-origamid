@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limpar e Validar CPF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <style>
+    li {
+      padding: 5px;
+      font-family: "Roboto Monto", monospace;
+      ;
+    }
+
+    li:nth-child(odd) {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    label {
+      display: block;
+      font-family: "Roboto Monto", monospace;
+      font-size: 1.2rem;
+      margin: 10px 0 5px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 5px;
+      border: 2px solid black;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    input.erro {
+      border-color: red;
+    }
+
+    input.valido {
+      border-color: green;
+    }
+
+    input::placeholder {
+      color: rgba(0, 0, 0, .4);
+    }
+
+    .erro-text {
+      display: none;
+      font-family: "Roboto Monto", monospace;
+      font-size: .875rem;
+      color: red;
+    }
+
+    .erro-text.ativar {
+      display: block;
+    }
+  </style>
+
+  <h1>Clientes CPF</h1>
+  <ul class="cpf">
+    <li>111.111.111-11</li>
+    <li>222222222-22</li>
+    <li>333-333-333-33</li>
+    <li>44444444444</li>
+    <li>555 555 555 55</li>
+    <li>666666.666-66</li>
+    <li>777.777.777.77</li>
+    <li>888 888.888-88</li>
+  </ul>
+
+  <form action="">
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+  </form>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
